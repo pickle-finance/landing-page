@@ -1,0 +1,87 @@
+:root {
+  --bg-color: #242526;
+  --primary-color: #0dcf09;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--bg-color);
+  color: white;
+}
+
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+
+}
+
+h1.header {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 6rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--bg-color);
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+a.button:hover {
+  color: white;
+  background-color: var(--bg-color);
+}
+
+a.button.invert {
+  color: white;
+  background-color: var(--bg-color);
+}
+
+a.button.invert:hover {
+  color: var(--bg-color);
+  background-color: white;
+}
+
+a.button.accent.invert {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+a.button.accent.invert:hover {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+}
+
+a.button.accent {
+  color: var(--bg-color);
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+a.button.accent:hover {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}
