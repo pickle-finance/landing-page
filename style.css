@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Menlo;
+  src: url(Menlo-Regular.ttf);
+}
+
 :root {
   --bg-color: #242526;
   --primary-color: #0dcf09;
@@ -12,6 +17,10 @@ body {
 /* prettier-ignore */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Code Pro', monospace;
+}
+
+.banner {
+  font-family: "Menlo", monospace;
 }
 
 .container {
