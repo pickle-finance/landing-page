@@ -4,7 +4,8 @@
 }
 
 :root {
-  --bg-color: #242526;
+  --dark-grey: #242526;
+  --bg-color: var(--dark-grey);
   --green: #26ff91;
   --green-glow: rgba(38, 255, 145, 0.5);
   --green-shadow: var(--green-glow) 0 0 18px;
@@ -67,6 +68,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1.header {
@@ -83,49 +87,16 @@ a:hover {
   text-decoration: underline;
 }
 
-a.button {
-  display: inline-block;
+.app-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: var(--dark-grey);
+  background-color: var(--green);
+  text-align: center;
+  font-weight: bold;
+}
+
+.app-button:hover {
   text-decoration: none;
-  color: var(--bg-color);
   background-color: white;
-  padding: 0.75rem 1rem;
-  border: 1px solid white;
-  border-radius: 5px;
-}
-
-a.button:hover {
-  color: white;
-  background-color: var(--bg-color);
-}
-
-a.button.invert {
-  color: white;
-  background-color: var(--bg-color);
-}
-
-a.button.invert:hover {
-  color: var(--bg-color);
-  background-color: white;
-}
-
-a.button.accent.invert {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-  background-color: var(--bg-color);
-}
-
-a.button.accent.invert:hover {
-  color: var(--bg-color);
-  background-color: var(--primary-color);
-}
-
-a.button.accent {
-  color: var(--bg-color);
-  border-color: var(--primary-color);
-  background-color: var(--primary-color);
-}
-
-a.button.accent:hover {
-  color: var(--primary-color);
-  background-color: var(--bg-color);
 }
