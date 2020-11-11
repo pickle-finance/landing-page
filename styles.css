@@ -24,22 +24,39 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "VT323",monospace;
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .logo {
   font-family: "Menlo", monospace;
   color: var(--cyan);
   text-shadow: var(--cyan-shadow);
-  line-height: 1.3rem;
-  font-size: 1rem;
-  margin: 0px;
+  margin: auto;
+  font-size: 0.67rem;
+  line-height: 0.871rem;
 }
 
-.subtitle {
+.tagline {
   color: var(--green);
   text-shadow: var(--green-shadow);
-  font-size: 24px;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 4px;
+  font-size: 1rem;
+  letter-spacing: 0.167rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .logo {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .tagline {
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+  }
 }
 
 .container {
