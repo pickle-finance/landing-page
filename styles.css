@@ -5,7 +5,11 @@
 
 :root {
   --bg-color: #242526;
-  --primary-color: #0dcf09;
+  --green: #26ff91;
+  --green-glow: rgba(38, 255, 145, 0.5);
+  --green-shadow: var(--green-glow) 0 0 18px;
+  --cyan: #53ffe2;
+  --cyan-shadow: var(--cyan) 0px 0px 8px;
 }
 
 body {
@@ -16,11 +20,26 @@ body {
 
 /* prettier-ignore */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Code Pro', monospace;
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: "VT323",monospace;
 }
 
-.banner {
+.logo {
   font-family: "Menlo", monospace;
+  color: var(--cyan);
+  text-shadow: var(--cyan-shadow);
+  line-height: 1.3rem;
+  font-size: 1rem;
+  margin: 0px;
+}
+
+.subtitle {
+  color: var(--green);
+  text-shadow: var(--green-shadow);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 4px;
 }
 
 .container {
@@ -31,7 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content {
-
 }
 
 h1.header {
