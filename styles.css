@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 640px;
 }
 
 h1.header {
@@ -132,7 +132,7 @@ a:hover {
   display: grid;
   column-gap: 2rem;
   row-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .links {
